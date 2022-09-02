@@ -1,7 +1,7 @@
 function App() {
   return (
     <div>
-      <p>Edit and save to reload.</p>
+      <p>Amir.</p>
     </div>
   );
 }
