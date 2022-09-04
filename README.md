@@ -1,6 +1,8 @@
-# Getting Started with Create React App
+# timing-app
+timing app for every things
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+to see project online try this : https://amiraskaban.github.io/timing-app/
+
 
 ## Available Scripts
 
