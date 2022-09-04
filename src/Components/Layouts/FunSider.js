@@ -42,6 +42,7 @@ function FunSider() {
       </Sider>
       <Header
         className="site-layout-background"
+        theme="light"
         style={{
           padding: 0,
         }}
@@ -51,6 +52,10 @@ function FunSider() {
           {
             className: 'trigger',
             onClick: () => setCollapsed(!collapsed),
+            style: {
+              color: 'white',
+              fontSize: 20,
+            },
           }
         )}
       </Header>
