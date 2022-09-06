@@ -5,7 +5,7 @@ import 'antd/dist/antd.min.css';
 const { Footer } = Layout;
 
 function FunFooter() {
-  return <Footer>footer</Footer>;
+  return <Footer style={{ backgroundColor: 'gray' }}>footer</Footer>;
 }
 
 export default FunFooter;

@@ -1,11 +1,7 @@
+import { LoginOutlined } from '@ant-design/icons';
 import React from 'react';
-import { Layout, Menu } from 'antd';
+import { Button, Layout } from 'antd';
 import 'antd/dist/antd.min.css';
-
-const items1 = ['1', '2', '3'].map((key) => ({
-  key,
-  label: `nav ${key}`,
-}));
 
 const { Header } = Layout;
 function FunHeader() {
@@ -14,17 +10,31 @@ function FunHeader() {
       className="site-layout-background"
       style={{
         padding: 0,
+        display: 'flex',
       }}
     >
-      <Header className="header">
-        <div className="logo" />
-        <Menu
-          theme="dark"
-          mode="horizontal"
-          defaultSelectedKeys={['2']}
-          items={items1}
-        />
-      </Header>
+      <div>
+        <div
+          gutter={0}
+          style={{
+            display: 'flex',
+            paddingLeft: '10px',
+            alignItems: 'flex-start',
+          }}
+        >
+          <div>
+            <Button
+              type="primary"
+              shape="round"
+              icon={<LoginOutlined />}
+              size="middle"
+              href="/login"
+            >
+              Login
+            </Button>
+          </div>
+        </div>
+      </div>
     </Header>
   );
 }
