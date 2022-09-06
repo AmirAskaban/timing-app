@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/timing-app/static/css/main.bf3f8e9a.css",
-    "main.js": "/timing-app/static/js/main.5cffc4d3.js",
+    "main.js": "/timing-app/static/js/main.38f1c5cb.js",
     "static/js/787.d7b96cd1.chunk.js": "/timing-app/static/js/787.d7b96cd1.chunk.js",
     "index.html": "/timing-app/index.html",
     "main.bf3f8e9a.css.map": "/timing-app/static/css/main.bf3f8e9a.css.map",
-    "main.5cffc4d3.js.map": "/timing-app/static/js/main.5cffc4d3.js.map",
+    "main.38f1c5cb.js.map": "/timing-app/static/js/main.38f1c5cb.js.map",
     "787.d7b96cd1.chunk.js.map": "/timing-app/static/js/787.d7b96cd1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bf3f8e9a.css",
-    "static/js/main.5cffc4d3.js"
+    "static/js/main.38f1c5cb.js"
   ]
 }
