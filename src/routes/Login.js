@@ -66,7 +66,7 @@ function Login() {
 
             <Form.Item>
               <Button
-                href="/Events"
+                href="/timing-app/Events"
                 type="primary"
                 htmlType="submit"
                 className="login-form-button"

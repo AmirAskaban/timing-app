@@ -14,11 +14,11 @@ function App() {
   return (
     <Routes>
       <Route path="/timing-app" element={<Home />} />
-      <Route path="/login" element={<Login />} />
-      <Route path="/SignUp" element={<SignUp />} />
-      <Route path="/Events" element={<Events />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/contact" element={<Contact />} />
+      <Route path="/timing-app/login" element={<Login />} />
+      <Route path="/timing-app/SignUp" element={<SignUp />} />
+      <Route path="/timing-app/Events" element={<Events />} />
+      <Route path="/timing-app/about" element={<About />} />
+      <Route path="/timing-app/contact" element={<Contact />} />
       <Route path="/404" element={<NotFound />} />
       <Route path="*" element={<NotFound />} />
     </Routes>

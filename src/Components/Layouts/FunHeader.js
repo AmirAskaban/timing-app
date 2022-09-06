@@ -28,7 +28,7 @@ function FunHeader() {
               shape="round"
               icon={<LoginOutlined />}
               size="middle"
-              href="/login"
+              href="/timing-app/login"
             >
               Login
             </Button>
