@@ -1,5 +1,5 @@
 import { LockOutlined, UserOutlined } from '@ant-design/icons';
-import { Button, Checkbox, Col, Form, Input, Row } from 'antd';
+import { Button, Col, Form, Input, Row } from 'antd';
 import React from 'react';
 
 function Login() {
@@ -7,7 +7,6 @@ function Login() {
     <div
       style={{
         minHeight: 760,
-        backgroundImage: 'linear-gradient(#EECDA3, #EF629F)',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
@@ -59,21 +58,14 @@ function Login() {
               />
             </Form.Item>
             <Form.Item>
-              <Form.Item name="remember" valuePropName="checked" noStyle>
-                <Checkbox>Remember me</Checkbox>
-              </Form.Item>
-            </Form.Item>
-
-            <Form.Item>
               <Button
-                href="/timing-app/Events"
+                href="/timing-app/CreateEvents"
                 type="primary"
                 htmlType="submit"
                 className="login-form-button"
               >
                 Log in
               </Button>
-              Or <a href="/SignUp">register now!</a>
             </Form.Item>
           </Form>
         </Col>
