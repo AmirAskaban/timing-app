@@ -1,6 +1,10 @@
-import { Button, Form, Input, Row } from 'antd';
+import { Form, Input, Row } from 'antd';
 import React from 'react';
 
+function showInput() {
+  // eslint-disable-next-line no-console
+  console.log(document.querySelector('#eventName').value);
+}
 function Events() {
   return (
     <div
@@ -14,18 +18,16 @@ function Events() {
     >
       <Row>
         <Form name="basic">
-          <Form.Item label="Event Name" name="event">
-            <Input />
-          </Form.Item>
-
-          <Form.Item>
-            <Button
-              type="primary"
-              htmlType="submit"
-              href="/timing-app/ShowEvents"
+          <Form.Item label="Event Name">
+            <Input id="eventName" type="text" className="form-control" />
+            <button
+              type="submit"
+              value="Submit"
+              // href="/timing-app/ShowEvents"
+              onClick={showInput}
             >
-              Submit
-            </Button>
+              submit
+            </button>
           </Form.Item>
         </Form>
       </Row>
