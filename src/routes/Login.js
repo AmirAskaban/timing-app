@@ -1,6 +1,7 @@
 import { LockOutlined, UserOutlined } from '@ant-design/icons';
 import { Button, Col, Form, Input, Row } from 'antd';
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Login() {
   return (
@@ -59,12 +60,11 @@ function Login() {
             </Form.Item>
             <Form.Item>
               <Button
-                href="/timing-app/CreateEvents"
                 type="primary"
                 htmlType="submit"
                 className="login-form-button"
               >
-                Log in
+                <Link to="/CreateEvents">Login</Link>
               </Button>
             </Form.Item>
           </Form>

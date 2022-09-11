@@ -9,8 +9,7 @@ import ShowEvents from '../routes/ShowEvents';
 function App() {
   return (
     <Routes>
-      {/* <Route exact path="/" element={<Home />} /> */}
-      <Route path="/" element={<Login />} />
+      <Route path="/" element={<Login />} exact />
       <Route path="/CreateEvents" element={<CreateEvents />} />
       <Route path="/ShowEvents" element={<ShowEvents />} />
     </Routes>

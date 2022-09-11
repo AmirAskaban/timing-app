@@ -1,5 +1,6 @@
-import { Form, Input, Row } from 'antd';
+import { Form, Input, Row, Button } from 'antd';
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function showInput() {
   // eslint-disable-next-line no-console
@@ -7,7 +8,7 @@ function showInput() {
 }
 function Events() {
   return (
-    <div
+    <Row
       style={{
         minHeight: 760,
         display: 'flex',
@@ -16,22 +17,15 @@ function Events() {
         flexDirection: 'column',
       }}
     >
-      <Row>
-        <Form name="basic">
-          <Form.Item label="Event Name">
-            <Input id="eventName" type="text" className="form-control" />
-            <button
-              type="submit"
-              value="Submit"
-              // href="/timing-app/ShowEvents"
-              onClick={showInput}
-            >
-              submit
-            </button>
-          </Form.Item>
-        </Form>
-      </Row>
-    </div>
+      <Form name="basic">
+        <Form.Item label="Event Name">
+          <Input id="eventName" type="text" className="form-control" />
+          <Button type="submit" value="Submit" onClick={showInput}>
+            <Link to="/ShowEvents">Submit</Link>
+          </Button>
+        </Form.Item>
+      </Form>
+    </Row>
   );
 }
 
